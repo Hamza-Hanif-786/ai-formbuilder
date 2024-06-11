@@ -17,7 +17,10 @@ function Header() {
     <>
       <div className='p-3 px-5 border-b shadow-sm'>
         <div className='flex justify-between items-center'>
-          <Image src={'/logo.svg'} alt="logo" width={180} height={50} className='h-auto w-auto' priority/>
+          <Link href={'/'}>
+            <Image src={'/logo.svg'} alt="logo" width={180} height={50} className='h-auto w-auto' priority/>
+          </Link>
+          
           {isSignedIn ? 
             <div className='flex items-center gap-5'>
               <Link href={'/dashboard'}>
